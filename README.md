@@ -31,14 +31,24 @@
     spring.jpa.open-in-view=false
     ###############################################
 
-    - department-service 입력력
+    - department-service 입력
     http://127.0.0.1:8087/api/departments -> POST 방식으로 호출
     {
         "id" : 1, 
         "departmentName" : "IT Admin",
         "departmentAddress" : "Busan",
-        "departmentCode" : "IT001"
+        "departmentCode" : "1"
     }
+    http://127.0.0.1:8087/api/users -> POST 방식으로 호출
+    - user-service 입력
+    {
+        "firstName" : "Dennis",
+        "lastName" : "Lee",
+        "email" : "itgenius1004@gmail.com",
+        "departmentId" : "1"
+    }
+
+
 
     consumer-service 
     producer-service 
