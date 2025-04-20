@@ -41,6 +41,16 @@
             "projectName": "department-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProducerService2Application<producer-service2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.producer_service2.ProducerService2Application",
+            "projectName": "producer-service2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
