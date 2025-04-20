@@ -48,12 +48,14 @@
         "departmentId" : "1"
     }
 
-
-
     consumer-service 
     producer-service 
 
     bin/kafka-console-consumer.sh --topic mytopic2 --from-beginning --bootstrap-server localhost:9092
+
+    * Apache Kafka 직접 실행하기
+    $ bin/zookeeper-server-start.sh config/zookeeper.properties
+    $ bin/kafka-server-start.sh config/server.properties
 
     email-service
     order-service
